@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="formWrapper">
+        <form>
+            <h2>Twoje zamówienie jest prawie gotowe!</h2>
+            <h3>Uzupełnij poniższe dane aby dokończyć zakup</h3>
+            <label for="fname">Imię</label>
+            <input type="text" id="fname" placeholder="Podaj swoje imię" required /><br>
+            <label for="lname">Nazwisko</label>
+            <input type="text" id="lname" placeholder="Podaj swoje nazwisko" required /><br>
+            <div class="grid">
+                <div class="post">
+                    <label for="street">Ulica</label>
+                    <input type="text" id="street" placeholder="Podaj nazwę ulicy" required /><br>
+                </div>
+                <div class="city">
+                    <label for="number">Numer domu/mieszkania</label>
+                    <input type="text" id="number" placeholder="Podaj numer domu/mieszkania" required /><br>
+                </div>
+                <div class="city">
+                    <label for="city">Miejscowość</label>
+                    <input type="text" id="city" placeholder="Podaj swoją miejscowość" required /><br>
+                </div>
+                <div class="post">
+                    <label for="post">Kod pocztowy</label>
+                    <input type="text" id="post" placeholder="Podaj kod pocztowy" required />
+                </div>
+            </div>
+            <h3>Wybierz sposób dostawy</h3>
+            <div class="delivery">
+                <div class="deliveryBlock">
+                    <img src="https://inpost.pl/themes/custom/inpost/logo.svg" width="100px" height="50px" />
+                    <input type="radio" id="inpost" name="inpost" checked />
+                    <span>Paczkomaty InPost (koszt dostawy - 9,99 zł)</span>
+                </div>
+                <div class="deliveryBlock">
+                    <img src="https://inpost.pl/themes/custom/inpost/logo.svg" width="100px" height="50px" />
+                    <input type="radio" id="inpost" name="inpost" />
+                    <span>Kurier InPost (koszt dostawy - 11,99 zł)</span>
+                </div>
+                <div class="deliveryBlock">
+                    <img src="https://www.dpd.com/wp-content/themes/DPD_NoLogin/images/DPD_logo_redgrad_rgb_responsive.svg" width="100px" height="50px" />
+                    <input type="radio" id="inpost" name="inpost" />
+                    <span>Kurier DPD (koszt dostawy - 11,99 zł)</span>
+                </div>
+                <div class="deliveryBlock">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/GLS_Logo_2021.svg" width="100px" height="50px" />
+                    <input type="radio" id="inpost" name="inpost" />
+                    <span>Kurier GLS (koszt dostawy - 12,99 zł)</span>
+                </div>
+                <div class="deliveryBlock">
+                    <img src="https://www.poczta-polska.pl/hermes/uploads/2019/09/Logo_poziom_200x106.png" width="100px" height="50px" />
+                    <input type="radio" id="inpost" name="inpost" />
+                    <span>Poczta Polska (koszt dostawy - 14,99 zł)</span>
+                </div>
+                <div class="deliveryBlock">
+                    <img src="https://www.wsb-nlu.edu.pl/themes/img/logo.svg" width="100px" height="50px" />
+                    <input type="radio" id="inpost" name="inpost" />
+                    <span>Odbiór osobisty w sklepie (dostawa darmowa)</span>
+                </div>
+            </div>
+            <textarea rows=5 placeholder="Dodatkowe informacje i/lub uwagi do zamówienia i dostawy"></textarea>
+            <button type="submit" class="submitButton">Potwierdź i zapłać</button>
+        </form>
+    </div>
+</body>
+</html>

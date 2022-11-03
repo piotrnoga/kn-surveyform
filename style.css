@@ -1,0 +1,100 @@
+body {
+    padding-top: 50px;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    background-image: url(https://cdn.pixabay.com/photo/2022/07/23/16/05/shopping-mall-7340181_1280.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+}
+
+.formWrapper {
+    width: 500px;
+    border: 2px solid #d7d7d7;
+    border-radius: 5px;
+    padding: 10px;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+form,
+.post,
+.city {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+form h2, h3 {
+    text-align: center;
+}
+
+form label {
+    padding-bottom: 7px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+textarea,
+input::placeholder {
+    font-style: italic;
+    font-size: 11px;
+}
+
+textarea,
+input[type="text"] {
+    border: 1px solid #999;
+}
+
+input[type="text"]::after {
+    border: 2px solid #16A42E;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    column-gap: 10px;
+    padding-right: 10px;
+}
+
+.delivery {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-left: 15px;
+}
+
+.deliveryBlock {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.delivery span {
+    display: flex;
+    align-items: center;
+    color: grey;;
+}
+
+input[type="radio"] {
+    display: flex;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #999;
+    transition: 0.2s all linear;
+    position: relative;
+    margin: auto 15px auto 15px;
+    border-radius: 4px;
+}
+
+input[type="radio"]:checked {
+    border: 8px solid #16A42E;
+}
+
+.submitButton {
+    width: 150px;
+    padding: 10px;
+    margin: 15px auto;
+    background-color: #16A42E;
+    border-radius: 10px;
+}
